@@ -1,4 +1,4 @@
-# Slutprojekt - Bibliotekssystem för Fulköping
+# Slutprojekt - <i>Bibliotekssystem för Fulköping</i>
 Ett Java-baserat bibliotekssystem designat för att ge användarna en enkel och intuitiv upplevelse. Systemet integrerar en MySQL-databas för effektiv hantering av media, inklusive sökning, lån och reservationer, samtidigt som det är byggt för att vara både robust och användarcentrerat.
 
 ## Funktioner
