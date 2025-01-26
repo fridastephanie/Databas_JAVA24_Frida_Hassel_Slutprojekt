@@ -2,10 +2,10 @@
 Ett Java-baserat bibliotekssystem designat för att ge användarna en enkel och intuitiv upplevelse. Systemet integrerar en MySQL-databas för effektiv hantering av media, inklusive sökning, lån och reservationer, samtidigt som det är byggt för att vara både robust och användarcentrerat.
 
 ## Funktioner
-1.	Sök och filtrera media: Sök generellt eller specifikt (titel, författare, mediatyp)
-2.	Lån och återlämning: Låna tillgängliga böcker, tidskrifter och annan media, med tydliga förfallodatum
-3.	Reservationer: Reservera utlånad media. Reservationer gäller i 30 dagar efter tillgänglighet
-4.	Användarhantering: Skapa konto, logga in och uppdatera profil. Visa lånestatus och historik
+1.	Sök och filtrera media: <i>Sök generellt eller specifikt (titel, författare, mediatyp)</i>
+2.	Lån och återlämning: <i>Låna tillgängliga böcker, tidskrifter och annan media, med tydliga förfallodatum</i>
+3.	Reservationer: <i>Reservera utlånad media. Reservationer gäller i 30 dagar efter tillgänglighet</i>
+4.	Användarhantering: <i>Skapa konto, logga in och uppdatera profil. Visa lånestatus och historik</i>
 
 ## Systemkrav
 •	Java 17<br>
@@ -32,10 +32,14 @@ db.password=yourPassword<br>
 ## Kör programmet
 1.	Skapa konto och logga in
 2.	Utforska biblioteket:<br>
-•	Vänster sida: Personlig uppgifter<br>
-Se pågående lån, reservationer, lånehistorik, ändra kontouppgifter, lämna tillbaka media och ta bort reservationer<br>
-•	Höger sida: Bibliotek<br>
-Sök media, visa media, låna ledig media eller reservera utlånad media
+Vänster sida: <i>Personlig uppgifter</i><br>
+•	Se pågående lån, reservationer, lånehistorik, ändra kontouppgifter, lämna tillbaka media och ta bort reservationer<br>
+Höger sida: <i>Bibliotek</i><br>
+•	Sök media, visa media, låna ledig media eller reservera utlånad media<br>
+•	Mediatypen böcker kan lånas i max 30 dagar, medan all annan media kan lånas i max 10 dagar<br>
+•	En reservation är endast giltigt i 30 dagar, därefter försvinner reservationen<br>
+•	Reservationen får först slutdatum efter när boken senast förväntas återlämnas,<br>
+men när boken återlämnats uppdateras datumet till 30 dagar efter den faktiska återlämningen
 
 ## Dataskydd och säkerhet
 •	Lösenord lagras som hashade värden<br>
