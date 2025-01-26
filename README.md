@@ -17,17 +17,17 @@ Ett Java-baserat bibliotekssystem designat för att ge användarna en enkel och 
 git clone https://github.com/MH-GRIT/fulk-pings-bibliotek-fridastephanie.git
 #### 2. Konfigurera databasen
 1.	Starta MySQL-servern (t.ex. via Docker)
-2.	Importera SQL-filen i DBeaver:<br>
-•	File > Open File och kör filen i rätt databas
-3.	Uppdatera database.properties i projektet efter egna iställningar, t.ex.:<br>
+2.	Importera SQL-filen till en tom databas och se till nedladdningen lyckas
+
+#### 3. Bygg och kör programmet
+1.	Öppna projektet i din IDE (t.ex. IntelliJ IDEA)
+2.  Uppdatera database.properties i projektet efter egna iställningar, t.ex.:<br>
 db.host=localhost<br>
 db.port=3306<br>
 db.name=yourDatabaseName<br>
 db.username=yourUsername<br>
 db.password=yourPassword<br>
-#### 3. Bygg och kör programmet
-1.	Öppna projektet i din IDE (t.ex. IntelliJ IDEA)
-2.	Kör huvudklassen Application för att starta applikationen
+3.	Kör huvudklassen Application för att starta applikationen
 
 ## Kör programmet
 1.	Skapa konto och logga in
